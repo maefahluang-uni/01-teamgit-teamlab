@@ -14,7 +14,7 @@ public class Counter {
 
 	// method decrements _ctr
 	public void decrement() {
-		_ctr--; // faulty decrement 555
+		_ctr--; // faulty decrement
 	}
 
 	// method resets _ctr
