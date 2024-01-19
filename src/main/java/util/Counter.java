@@ -51,7 +51,22 @@ public class Counter {
 	// TODO: dev3- count the frequency of word in sentence,
 	// refactor source code from dev1 and dev2
 	public void countFrequency(String word, String sentence) {
-		_ctr = -99;
+		// Initialize a counter to store the frequency of the word
+		int count = 0;
+	
+		// Split the sentence into words
+		String[] words = sentence.split(" ");
+	
+		// Iterate through the words and count occurrences of the specified word
+		for (String w : words) {
+			// Ignore case while comparing words
+			if (w.equalsIgnoreCase(word)) {
+				count++;
+			}
+		}
+	
+		// Assign the count to the class variable _ctr
+		_ctr = count;
 	}
 
 }
