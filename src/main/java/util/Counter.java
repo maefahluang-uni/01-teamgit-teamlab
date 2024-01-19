@@ -9,7 +9,7 @@ public class Counter {
 
 	// method increments _ctr
 	public void increment() {
-		_ctr++; // faulty increment 555
+		_ctr++; // faulty increment
 	}
 
 	// method decrements _ctr
